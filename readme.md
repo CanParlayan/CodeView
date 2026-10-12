@@ -164,7 +164,7 @@ Contributions are welcome! Please fork this repository and submit pull requests 
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+No license file is currently included in this repository. Do not assume reuse rights until a license is explicitly added by the maintainers.
 
 ## Acknowledgments
 
