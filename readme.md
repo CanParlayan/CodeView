@@ -33,7 +33,7 @@ cd CodeView
 Run the `CodeView` script with the path to your project directory as an argument:
 
 ```bash
-node script.js /path/to/your/project
+node app.js /path/to/your/project
 ```
 
 ### Excluding Directories or Files
@@ -41,13 +41,13 @@ node script.js /path/to/your/project
 To exclude specific directories or files:
 
 ```bash
-node script.js /path/to/your/project --exclude tests,docs --exclude-file __init__.py,setup.py
+node app.js /path/to/your/project --exclude tests,docs --exclude-file __init__.py,setup.py
 ```
 
 or using the short form:
 
 ```bash
-node script.js /path/to/your/project -e tests,docs -ef __init__.py,setup.py
+node app.js /path/to/your/project -e tests,docs -ef __init__.py,setup.py
 ```
 
 ### Including Specific Directories or Files
@@ -55,13 +55,13 @@ node script.js /path/to/your/project -e tests,docs -ef __init__.py,setup.py
 To include only specific directories or files:
 
 ```bash
-node script.js /path/to/your/project --include src,lib --include-file main.js,utils.js
+node app.js /path/to/your/project --include src,lib --include-file main.js,utils.js
 ```
 
 or using the short form:
 
 ```bash
-node script.js /path/to/your/project -i src,lib -if main.js,utils.js
+node app.js /path/to/your/project -i src,lib -if main.js,utils.js
 ```
 
 ### Minifying Output
@@ -69,19 +69,19 @@ node script.js /path/to/your/project -i src,lib -if main.js,utils.js
 To minify the output (remove all whitespace):
 
 ```bash
-node script.js /path/to/your/project --minify
+node app.js /path/to/your/project --minify
 ```
 
 or using the short form:
 
 ```bash
-node script.js /path/to/your/project -m
+node app.js /path/to/your/project -m
 ```
 
 ### Example
 
 ```bash
-node script.js /path/to/your/project --include src --include-file main.js --minify
+node app.js /path/to/your/project --include src --include-file main.js --minify
 ```
 
 This will generate a `codebase_review.txt` file with the following structure (if not minified):
